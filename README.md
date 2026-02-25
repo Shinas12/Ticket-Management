@@ -26,11 +26,6 @@ npm run dev
 
 ## 🐳 Docker Setup
 
-### Prerequisites
-
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Windows
-2. After installation, **restart your PC**
-3. Open Docker Desktop and make sure it's running (whale icon in taskbar)
 
 ### Run with Docker Compose
 
@@ -64,8 +59,4 @@ docker build -t ticket-frontend .
 docker run -p 5173:5173 ticket-frontend
 ```
 
-### Docker Notes
 
-- Images use **Node 18 Alpine** (lightweight ~50MB base)
-- `node_modules` are installed fresh inside the container (not copied from local)
-- No need to have Node.js installed locally when running via Docker
